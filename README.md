@@ -1,7 +1,8 @@
 # game-of-life
 Conways game of life
 ## Notes
-* Game of Life is not good candidate for displaying my ability to you OOP, SOLID or Design patterns.
+* Game of Life is not good candidate for displaying my ability to you for using OOP, SOLID or Design patterns.
+* Most the code is good candidates for being functional as it doesn't carry state. Hence the use of static functions.
 * I haven't done desktop app since University, but the core algorithm is fine. 
 * Perform of determining neighbors is not good, but I wanted to separate the logic of determining neighbors and whether a cell should life.
 
