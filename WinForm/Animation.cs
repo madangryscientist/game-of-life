@@ -59,7 +59,7 @@ namespace WinForm
 
             while (!cancelled)
             {
-                //Thread.Sleep(Delay);
+                Thread.Sleep(Delay);
                 update();
 
             }
@@ -67,14 +67,14 @@ namespace WinForm
 
         public void update()
         {
-          //  var stopwatch = new Stopwatch();
-          //  stopwatch.Start();
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
             var changed = _gameOfLife.UpdateState();
             repaint();
             _gameOfLife.NextGenaration(changed);
             iteration++;
-         //   stopwatch.Stop();
-           // _iterationCount.SetPropertyThreadSafe(() => _iterationCount.Text, "iteration: "+ iteration.ToString()+" "+ stopwatch.ElapsedMilliseconds+"ms"); 
+            stopwatch.Stop();
+            _iterationCount.SetPropertyThreadSafe(() => _iterationCount.Text, "iteration: "+ iteration.ToString()+" "+ stopwatch.ElapsedMilliseconds+"ms"); 
            
         }
     }

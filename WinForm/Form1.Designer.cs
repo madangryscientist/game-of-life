@@ -33,12 +33,13 @@
             this.paintGrid1 = new WinForm.PaintGrid();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.paintGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(752, 572);
+            this.button1.Location = new System.Drawing.Point(720, 468);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 41);
             this.button1.TabIndex = 6;
@@ -48,7 +49,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(661, 169);
+            this.textBox1.Location = new System.Drawing.Point(714, 153);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 22);
             this.textBox1.TabIndex = 7;
@@ -67,7 +68,7 @@
             this.paintGrid1.Margin = new System.Windows.Forms.Padding(4);
             this.paintGrid1.Name = "paintGrid1";
             this.paintGrid1.RowHeadersVisible = false;
-            this.paintGrid1.Size = new System.Drawing.Size(600, 600);
+            this.paintGrid1.Size = new System.Drawing.Size(671, 496);
             this.paintGrid1.TabIndex = 5;
             this.paintGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.paintGrid1_CellContentClick);
             this.paintGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.paintGrid1_CellContentClick);
@@ -75,7 +76,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(655, 45);
+            this.label1.Location = new System.Drawing.Point(708, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 17);
             this.label1.TabIndex = 8;
@@ -84,17 +85,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(655, 72);
+            this.label2.Location = new System.Drawing.Point(708, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "0";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(711, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 17);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Deplay(ms) ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 686);
+            this.ClientSize = new System.Drawing.Size(855, 536);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -115,5 +126,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

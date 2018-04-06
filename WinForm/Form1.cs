@@ -12,7 +12,7 @@ namespace WinForm
         private IGameOfLife _gameOfLife;
         private Animation _animation;
         Thread backgroundThread;
-        private GridSize gridSize = new GridSize() { X = 50, Y = 50 };
+        private GridSize gridSize = new GridSize() { X = 100, Y = 100 };
         public Form1()
         {
             InitializeComponent();
@@ -20,14 +20,14 @@ namespace WinForm
             for (int x = 0; x < gridSize.X; x++)
             {
                 paintGrid1.Columns.Add("", "");
-                paintGrid1.Columns[x].Width = paintGrid1.Size.Width / gridSize.X - 1;
+                paintGrid1.Columns[x].Width = paintGrid1.Size.Width / gridSize.X ;
             }
 
             paintGrid1.Rows.Add(gridSize.Y);
 
             for (int x = 0; x < gridSize.Y; x++)
             {
-                paintGrid1.Rows[x].Height = paintGrid1.Size.Height / gridSize.Y - 1;
+                paintGrid1.Rows[x].Height = paintGrid1.Size.Height / gridSize.Y ;
             }
             paintGrid1.ResumeLayout();
             _gameOfLife = new GameOfLife.Core.GameOfLife(gridSize);

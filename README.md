@@ -1,6 +1,9 @@
 # game-of-life
 Conways game of life
-
+## Notes
+* Game of Life is not good candidate for displaying my ability to you OOP, SOLID or Design patterns.
+* I haven't done desktop app since University, but the core algorithm is fine. 
+* Perform of determining neighbors is not good, but I wanted to separate the logic of determining neighbors and whether a cell should life.
 
 ## Overview
 The Game of Life, also known simply as Life is a cellular automaton devised by
@@ -24,3 +27,4 @@ Live cells:
 Dead cells:
 1. a dead cell with exactly three live neighbours becomes alive
 2. in all other cases a dead cell will stay dead.
+
